@@ -42,11 +42,14 @@ describe ( 'Тестируем jquery-jasmine', function () {
 	} );
 
 	it ( 'Проверим наличие p элемента внутри дива  ', function () {
-		console.log(elem);
+
 		expect(elem.children()).toBeMatchedBy('p');
 		expect(elem).toContainElement('p');
 		expect(elem).toContainElement('.asd');
 		expect(elem.children()).toBeMatchedBy('p');
 	} );
 } );
+
+
+
 
