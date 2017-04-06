@@ -31,5 +31,10 @@ window.Computer = {
 			}
 		} );
 		return this.currentMemory
+	},
+
+	format: function (  ) {
+		this.currentSpace  = 1000;
+
 	}
 };

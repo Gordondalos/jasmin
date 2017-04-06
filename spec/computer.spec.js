@@ -55,4 +55,19 @@ describe('Комптютер тесты жесткого диска. ', function
 		)).toBe(false);
 	});
 
+
+	it('Должен уметь форматировать жесткий диск', function (  ) {
+		//установим пару программ
+		expect(Computer.install(
+			{name: "GTA", space: 600, install : false },
+			{name: "Photoshop", space: 400, install : false }
+		)).toBe(true);
+		// отформатируем
+		expect(Computer.format());
+		// должно быть 1000
+		expect(Computer.currentSpace).toEqual(1000);
+	});
+
+
+
 });
