@@ -47,3 +47,17 @@ var returnTrueFunction = function(){
 var returnFalseFunction = function(){
 	return false;
 };
+
+var giveMyArray = function (  ) {
+	return ['Дизайнер','Верстальщик','Мудак'];
+};
+
+var User = {
+
+	age: 19,
+
+	getAge: function (  ) {
+		return this.age;
+	}
+
+};
