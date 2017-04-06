@@ -1,0 +1,21 @@
+{
+  "name": "jasmine",
+  "homepage": "https://github.com/Gordondalos/jasmin",
+  "authors": [
+    "Gordondalos <gordondalos@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jasmine-jquery": "^2.1.1"
+  }
+}

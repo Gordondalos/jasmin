@@ -7,9 +7,10 @@
 #    config.boot_dir = '/absolute/path/to/boot_dir'
 #    config.boot_files = lambda { ['/absolute/path/to/boot_dir/file.js'] }
 # end
-#
+# config.boot_files = lambda { ['spec/javascripts/helpers/jquery.js,spec/javascripts/helpers/jasmine-jquery.js'] }
 # Example: prevent PhantomJS auto install, uses PhantomJS already on your path.
 Jasmine.configure do |config|
+
   if ENV['TRAVIS']
     config.prevent_phantom_js_auto_install = true
   end

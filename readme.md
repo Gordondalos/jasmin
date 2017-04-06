@@ -33,5 +33,32 @@
    
 в нем указано где лежат файлы для тестирования
 и где лежат сами тесты
+
+
+тестирование дом дерева
+для этого используется jasmine-jquery
+
+    https://github.com/velesin/jasmine-jquery.git
+
+эта библиотека содержит мого матчеров и позволяет
+писать матчеры в стиле jquery
+
+например
+    expect($('<input type="checkbox" checked="checked"/>')).toBeChecked()
+    expect('<input type="submit" disabled="disabled"/>').toBeDisabled()
+    expect($('<input type="text" />').focus()).toBeFocused()
+    expect($('<div><span class="some-class"></span></div>')).toContain('some-class')
+    
+ масса примеров написана в самом ридми библиотеки
+ 
+ для использования этого плагина положим
+ jasmine-jquery.js в папку spec/javascripts/helpers
+ тудаже положим сам jquery, все нужные библиотеки подтянул bower
+
+
+
+
+
+
  
  
