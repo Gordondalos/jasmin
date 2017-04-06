@@ -38,3 +38,12 @@ window.Computer = {
 
 	}
 };
+
+
+var returnTrueFunction = function(){
+	return true;
+};
+
+var returnFalseFunction = function(){
+	return false;
+};

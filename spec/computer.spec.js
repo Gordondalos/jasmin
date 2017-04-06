@@ -32,7 +32,6 @@ describe('Комптютер тесты памяти', function(){
 
 
 });
-
 describe('Комптютер тесты жесткого диска. ', function(){
 	// чтобы тесты сбрасывать на стартовые значения у жасмин есть метод
 	beforeEach(function (  ) {
@@ -71,3 +70,29 @@ describe('Комптютер тесты жесткого диска. ', function
 
 
 });
+
+
+describe ( 'Функции проверки ожиданий', function () {
+	it ( 'Функция которая всегда возвращает true toEqual', function () {
+		expect(returnTrueFunction()).toEqual(true);
+	} );
+
+	it ( 'Функция которая всегда возвращает true toBeTruthy', function () {
+		expect(returnTrueFunction()).toBeTruthy();
+	} );
+
+	it ( 'Функция которая всегда возвращает false toBeTruthy', function () {
+		expect(returnFalseFunction()).not.toBeTruthy();
+	} );
+
+
+	it ( 'Функция которая всегда возвращает false toBeFalsy', function () {
+	    expect( returnFalseFunction()).toBeFalsy();
+	} );
+
+
+
+} );
+
+
+
